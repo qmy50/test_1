@@ -58,7 +58,7 @@ st.divider()
 
 # st.write("预测房价结果为：",'%.2f' % ans)
 
-image_1=Image.open(r'D:\vscode\machine_learning\06966bbd48e8c52c4c91b7b11c724da1.png')
+image_1=Image.open('image.png')
 
 st.image(image_1)
 
