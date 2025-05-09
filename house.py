@@ -3,7 +3,7 @@ import numpy as np
 from sklearn.metrics import mean_squared_error
 
 # 载入数据
-data = np.loadtxt(r'D:\vscode\machine_learning\机器学习\机器学习\回归\线性回归以及非线性回归\house_price.txt',dtype=int,delimiter=',')     
+data = np.loadtxt('house_price.txt',dtype=int,delimiter=',')     
 print(data)
 x_data=data[:,0]
 y_data=data[:,1]
