@@ -47,7 +47,7 @@ if st.session_state.step==3:
 
 # st.code(example,language='python')
 
-# st.divider()
+st.divider()
 
 # slider_val=st.slider(label='请输入房屋面积：',
 #           min_value=50,
@@ -58,5 +58,7 @@ if st.session_state.step==3:
 
 # st.write("预测房价结果为：",'%.2f' % ans)
 
+image_1=Image.open(r'D:\vscode\machine_learning\06966bbd48e8c52c4c91b7b11c724da1.png')
 
+st.image(image_1)
 
