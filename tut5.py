@@ -252,7 +252,7 @@ if st.session_state.step==5:
     st.write('预测幸存的样本中：精确率0.85 召回率0.62 F1率0.71')
 st.divider()
 
-image_2=Image.open('image.png')
+# image_2=Image.open('image.png')
 
-st.image(image_2)
+# st.image(image_2)
 
