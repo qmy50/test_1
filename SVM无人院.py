@@ -13,7 +13,7 @@ def iris_type(s):
   # 之前保存的文件路径
 data = np.loadtxt(r'D:\vscode\machine_learning\机器学习\机器学习\支持向量机SVM\iris.txt',dtype=float,delimiter=',',converters={4: iris_type})     
 print(data)
-
+np.savetxt('iris1.txt', data,fmt='%.2f')
 X, y = np.split(data, [4],axis=1)
 print(X)
 x = X[:, 0:2]
@@ -66,3 +66,4 @@ plt.xlabel("预测类别")
 plt.ylabel("真实类别")
 plt.title("SVM分类器的混淆矩阵")
 plt.show()
+

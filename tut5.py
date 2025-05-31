@@ -47,9 +47,9 @@ def load_model():
     data=X[:,0:2]
     return data
 
-def iris_type(s):
-    it = {b'setosa': 0, b'versicolor': 1, b'virginica': 2}
-    return it[s]
+# def iris_type(s):
+#     it = {b'setosa': 0, b'versicolor': 1, b'virginica': 2}
+#     return it[s]
 
 
 @st.cache_resource
@@ -60,7 +60,7 @@ def k_Mean_model(slider_val,data):
 
 @st.cache_resource
 def load_iris():
-    data = np.loadtxt('iris.txt',dtype=float,delimiter=',',converters={4: iris_type})     
+    data = np.loadtxt('iris1.txt',dtype=float,delimiter=' ')     
     # print(data)
     X, y = np.split(data, [4],axis=1)
     # print(X)
